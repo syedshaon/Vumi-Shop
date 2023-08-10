@@ -14,4 +14,9 @@ export default defineConfig({
     hot: true,
   },
   plugins: [react()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setup.js",
+  },
 });
